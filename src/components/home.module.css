@@ -1,0 +1,109 @@
+/* home.module.css */
+
+/* Base styles for the Home component */
+.home {
+  padding: 2rem;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 2rem 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Styling for the body background */
+body {
+  background-color: #e57835; /* Reddish-pink */
+  background-image: linear-gradient(45deg, #e58c3e, #802be1); /* Gradient from reddish-pink to turquoise */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Show and hide animations */
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Styling for the toggle-section */
+.toggle-section {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.toggle-section input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.toggle-section button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #f76c6c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styling for the preview-section */
+.preview-section {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Styling for individual preview sections */
+.caption-preview,
+.hashtag-preview,
+.image-preview,
+.post-preview {
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.image-preview {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-preview {
+  grid-column: span 2;
+}
+
+/* Styling for the social-media-post section */
+.social-media-post {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.post-image img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.post-content {
+  flex: 1;
+}
+
+.post-caption,
+.post-hashtags,
+.post-text {
+  margin-bottom: 0.5rem;
+}
